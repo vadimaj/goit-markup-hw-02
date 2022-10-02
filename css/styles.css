@@ -149,21 +149,22 @@ body {
 .footer .logo {
   color: var(--primary-white-color);
 }
-/*.footer-nav .link {
-  color: var(--secondary-white-color);
-}*/
 
 /* portfolio section */
 
 .portfolio-title {
   color: var(--secondary-text-color);
-
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: capitalize;
 }
+
+.portfolio-list .link {
+  color: var(--primary-text-color);
+}
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
