@@ -1,0 +1,215 @@
+/* Колір основного тексту #757575  */
+/* Вторинний колір #212121 */
+/* Основний чорний #000000 */
+/* Основний білий #FFFFFF */
+/* Вторинний білий rgba(255, 255, 255, 0.6) */
+/* Акцент #2196F3 */
+/* Вторинний акцент #188CE8 */
+/* Вторинний колір фону #2F303A */
+/* Третинний колір фону  #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --primary-black-color: #000000;
+  --primary-white-color: #ffffff;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --secondary-accent-color: #188ce8;
+  --secondary-bgcolor: #2f303a;
+  --tertiary-bgcolor: #f5f4fa;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*  Logo  */
+
+.logo {
+  color: var(--primary-black-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/*  Site-nav  */
+
+.link {
+  text-decoration: none;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link,
+.contacts-nav .link {
+  color: var(--secondary-text-color);
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/*Contacts nav */
+.contacts-nav .link.address-accent,
+.footer-nav .link.address-accent {
+  color: var(--primary-white-color);
+}
+
+.contacts-nav .link,
+.footer-nav .link {
+  color: var(--secondary-text-color);
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus,
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* All sections styles */
+
+.section-title {
+  color: var(--secondary-text-color);
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Hero */
+.hero {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-bgcolor);
+}
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Our benefits section */
+.benefits-subtitle {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Our team section  */
+
+.team {
+  background-color: var(--tertiary-bgcolor);
+}
+
+.team-subtitle {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/*  Footer */
+.footer {
+  background-color: var(--secondary-bgcolor);
+}
+
+/* Footer-nav */
+
+.address {
+  font-style: normal;
+}
+
+.address .link {
+  color: var(--secondary-white-color);
+}
+
+.footer .logo {
+  color: var(--primary-white-color);
+}
+
+/* portfolio section */
+
+.portfolio-title {
+  color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.list-reset {
+  list-style: none;
+}
+.list-reset .link {
+  color: currentColor;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* Button */
+.button {
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+/*  .button.primary{
+} */
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--secondary-accent-color);
+}
+
+.button.secondary {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-white-color);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
